@@ -1,0 +1,7 @@
+{
+    "jsonls": {
+        ".*": [
+            "./schemas/schema.json"
+        ]
+    }
+}
