@@ -13,15 +13,15 @@
                         "description": "File name pattern to be matched",
                         "example" : "*"
                     },
-                    "uri": {
-                        "description": "URI for the schema. It can be an weblink or a local path (use absolute path)"
+                    "url": {
+                        "description": "URL for the schema. It can be an weblink or a local path (use absolute path)"
                         "example": [
                             "/home/example/schema.json",
                             "https://example.com/schema.json"
                         ]
                     }
                 },
-                "required": ["fileMatch", "uri"]
+                "required": ["fileMatch", "url"]
             }
         }
     }
