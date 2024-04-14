@@ -39,7 +39,7 @@ local function get_buf_directory(bufn)
     return current_directory, current_file
 end
 
-M.setup = function ()
+local function setup()
     vim.api.nvim_create_autocmd("LspAttach", {
         callback = function (args)
 
@@ -71,5 +71,7 @@ M.setup = function ()
         end
     })
 end
+
+M.setup = setup
 
 return M

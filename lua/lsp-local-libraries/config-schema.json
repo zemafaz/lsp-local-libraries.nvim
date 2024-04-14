@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "Add local libraries to nvim-lsp",
+    "type": "object",
+    "properties": {
+        "jsonls" : {
+            "type": "array",
+            "description": "Configuration for JSON schemas",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "fileMatch": {
+                        "description": "File name pattern to be matched",
+                        "example" : "*"
+                    },
+                    "uri": {
+                        "description": "URI for the schema. It can be an weblink or a local path (use absolute path)"
+                        "example": [
+                            "/home/example/schema.json",
+                            "https://example.com/schema.json"
+                        ]
+                    }
+                },
+                "required": ["fileMatch", "uri"]
+            }
+        }
+    }
+}
